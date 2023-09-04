@@ -7,7 +7,12 @@ var data = {
         fecha_nacimiento: document.getElementById("fecha").value,
 };
     
-function guardarInfo(){    
+function guardarInfo(){   
+    var data = {
+        nombre : document.getElementById("nombre").value,
+        apellido: document.getElementById("apellido").value,
+        fecha_nacimiento: document.getElementById("fecha").value,
+}; 
 fetch(url, {
     method: "POST", 
     body: JSON.stringify(data), 
